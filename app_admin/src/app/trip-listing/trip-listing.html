@@ -1,0 +1,15 @@
+<div>
+  <button (click)="addTrip()" class="btn btn-info">Add Trip</button>
+</div>
+
+@if (trips$ | async; as trips) {
+
+
+  <div class="row">
+    @for (trip of trips; track trip.code) {
+      <div class="col-md-4">
+        <app-trip-card [trip]="trip"></app-trip-card>
+      </div>
+    }
+  </div>
+}

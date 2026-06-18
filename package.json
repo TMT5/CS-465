@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/TMT5/CS-465#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "hbs": "^4.2.1",
     "mongoose": "^9.6.3"
